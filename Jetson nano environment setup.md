@@ -33,7 +33,7 @@ sudo nano Makefile
 GPU =1
 CUDNN=1
 OPENCV=1
-LIBSO = 1  !!!!!
+LIBSO = 1  # !!!!!
 ```
 
 2. Compile the darknet:
