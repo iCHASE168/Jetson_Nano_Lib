@@ -11,7 +11,11 @@ export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-3. Download Darknet and Yolo git clone https://github.com/AlexeyAB/darknet
+3. Download Darknet and Yolo
+
+```shell
+git clone https://github.com/AlexeyAB/darknet
+```
 
 # Change the parameters and compile
 
