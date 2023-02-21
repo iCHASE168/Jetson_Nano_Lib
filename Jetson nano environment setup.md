@@ -1,7 +1,12 @@
 # Install yolov4
 
-1. Update sudo apt-get update
-2. Export Cuda path
+1. Update
+
+```shell
+sudo apt-get -y update
+```
+
+3. Export Cuda path
 
 ```shell
 export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
