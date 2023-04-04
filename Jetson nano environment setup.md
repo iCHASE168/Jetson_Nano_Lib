@@ -90,7 +90,26 @@ gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64) # repl
 ```
 
 # Install Teamviewer
+### new
+```shell
+# install teamviewer
+wget -O teamviewer-host_arm64.deb https://download.teamviewer.com/download/linux/teamviewer-host_arm64.deb && \
+sudo dpkg -i teamviewer-host_arm64.deb; \
+sudo apt install -y -f && \
+rm teamviewer-host_arm64.deb
+```
+```shell
+# set connected password
+sudo systemctl enable teamviewerd.service && \
+sudo teamviewer info | grep "TeamViewer ID" && \
+echo "Enter the connected password you want to set:" && \
+read -s passwd && \
+echo "Verify the password again:" && \
+read -s passwd_confirm && \
+[ "$passwd" == "$passwd_confirm" ] && sudo teamviewer passwd "$passwd" || echo "Entered passwords do not match. Please try again."
+```
 
+### old
 ```shell
 https://www.teamviewer.com/tw/download/raspberry-pi/
 cd ./Downloads
