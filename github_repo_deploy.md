@@ -23,3 +23,12 @@ type -p curl >/dev/null || sudo apt install curl -y \
 && sudo apt install gh -y \
 && gh auth login
 ```
+2. Follow the screenshot, then enter your token
+![](https://i.imgur.com/GT1wQwe.png)
+![](https://i.imgur.com/pJzA3D3.png)
+![](https://i.imgur.com/WPKGiPO.png)
+![](https://i.imgur.com/wvzVQ8M.png)
+![](https://i.imgur.com/MzSoTFX.png)
+
+#### Option 2: git clone directly and use token as your GitHub password to login
+> Note: with this method, you have to re-enter (re-login) your token whenever you want to do any action such as pull or push
